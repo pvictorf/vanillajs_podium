@@ -5,9 +5,12 @@
   justify-content: space-evenly;
   border-bottom: 1px solid #ddd;
   min-height: 20rem;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .podium {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -15,8 +18,17 @@
   height: 20rem;
 }
 
+.podium_position {
+  color: #fff;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
 .podium .bar {
-  background-color: aquamarine;
+  background-color: rgb(129, 127, 255);
 }
 
 .podium_user {
@@ -59,8 +71,42 @@
 
 
 /* Ranking */
-.ranking_avatar {
+.ranking-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  margin-top: 1rem;
+}
+
+.ranking {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 4px #eee;
+}
+
+.ranking .ranking_avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
+
+.ranking .ranking_name {
+  color: #222;
+  font-size: 1.1rem;
+  margin: 0.2rem 0;
+}
+
+.ranking .ranking_points {
+  color: #777;
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+

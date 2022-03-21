@@ -3,10 +3,7 @@ import * as Podium from './assets/js/podium.js'
 
 async function loadPodium() {
   const data = await Podium.fetchPodium()
-  Podium.drawPodium({
-    selector: '#podium-template',
-    data,
-  })
+  Podium.draw(data)
 }
 
 loadPodium();

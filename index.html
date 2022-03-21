@@ -9,55 +9,11 @@
   <body>
     <div id="app">
       <!-- Podium -->
-      <div id="podium-template" class="podium-list">
-        <div class="podium" data-position="5">
-          <div class="podium_user">
-              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/men/26.jpg"/>
-              <p class="podium_name">Ronaldo Yung Silva</p>
-          </div>
-          <div class="bar" style="height: 10%"></div>
-        </div>
-
-        <div class="podium" data-position="3">
-          <div class="podium_user">
-              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/men/62.jpg"/>
-              <p class="podium_name">Andre Stanley Mattos</p>
-          </div>
-          <div class="bar" style="height: 40%;"></div>
-        </div>
-
-        <div class="podium" data-position="1">
-          <div class="podium_user">
-              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/women/66.jpg"/>
-              <p class="podium_name">Kaylee Banks</p>
-          </div>
-          <div class="bar" style="height: 100%;"></div>
-        </div>
-
-        <div class="podium" data-position="2">
-          <div class="podium_user">
-              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/men/21.jpg"/>
-              <p class="podium_name">Arnaldo Cunha Santos Matheus Ferreira</p>
-          </div>
-          <div class="bar" style="height: 60%;"></div>
-        </div>
-
-        <div class="podium" data-position="4">
-          <div class="podium_user">
-              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/women/64.jpg"/>
-              <p class="podium_name">Cristine Santos Almeida</p>
-          </div>
-          <div class="bar" style="height: 30%;"></div>
-        </div>
-      </div>
+      <div id="podium-render" class="podium-list"></div>
       <!-- /Podium -->
 
       <!-- Ranking -->
-      <div id="ranking-template" class="ranking">
-        <p class="ranking-position"></p>
-        <img class="ranking-avatar avatar"/>
-        <p class="ranking-name" ></p>
-      </div>
+      <div id="ranking-render" class="ranking-list"></div>
        <!-- /Ranking -->
     </div>
 
