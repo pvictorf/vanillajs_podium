@@ -38,7 +38,7 @@ function podiumTemplate(podium) {
   };
 
   return `
-  <div class="podium" data-position="${podium.position}">
+  <div class="podium scale-in-ver-bottom " data-position="${podium.position}">
       <div class="podium_user">
           <img class="podium_avatar avatar" src="${podium.avatar}" onerror="this.onerror=null;this.src='./assets/images/no-image.svg'"/>
           <p class="podium_name">${podium.name}</p>
@@ -50,7 +50,7 @@ function podiumTemplate(podium) {
 
 function rankingTemplate(raking) {
   return `
-  <div id="ranking" class="ranking">
+  <div class="ranking fade-in">
     <p class="ranking_position">${raking.position}</p>
     <img class="ranking_avatar" src="${raking.avatar}" onerror="this.onerror=null;this.src='./assets/images/no-image.svg'"/>
     <div class="raking_info">
