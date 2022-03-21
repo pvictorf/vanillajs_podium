@@ -12,40 +12,40 @@
     "name": "Mark Perez",
     "position": 2,
     "points": 2333,
-    "avatar": "https://randomuser.me/api/portraits/men/62.jpg"  
+    "avatar": "https://randomuser.me/api/portraits/men/62__.jpg"  
   },
   { 
     "id": 3,
-    "name": "Andre Stanley",
+    "name": "Pedro Yung Silva Stanley",
     "position": 3,
     "points": 2333,
     "avatar": "https://randomuser.me/api/portraits/men/26.jpg"  
   },
   { 
-    "id": 3,
+    "id": 4,
     "name": "Pedro Silva",
-    "position": 3,
+    "position": 4,
     "points": 2333,
     "avatar": "https://randomuser.me/api/portraits/men/21.jpg"  
   },
   { 
-    "id": 4,
+    "id": 5,
     "name": "Cherly Yild",
-    "position": 4,
+    "position": 5,
     "points": 2333,
     "avatar": "https://randomuser.me/api/portraits/women/64.jpg"  
   },
   { 
-    "id": 5,
+    "id": 6,
     "name": "Marcus Sanders",
-    "position": 5,
+    "position": 6,
     "points": 2333,
     "avatar": "https://randomuser.me/api/portraits/men/3.jpg"  
   },
   { 
-    "id": 5,
+    "id": 7,
     "name": "Francis Stanley",
-    "position": 5,
+    "position": 7,
     "points": 2333,
     "avatar": "https://randomuser.me/api/portraits/men/68.jpg"  
   }
