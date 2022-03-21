@@ -8,10 +8,11 @@ export async function fetchPodium() {
 }
 
 export function drawPodium({selector, data}) {
-   const winners = data
-    .filter(({position}) => position >= 1 && position <= 5)
-    .map(winner => podiumTemplate(winner))  
-    .join('')
+   const podium = data.filter(({position}) => position >= 1 && position <= 5)
+   podium.map(p => podiumTemplate(p))  
+
+   const ranking = data
+   ranking.map(r => rankingTemplate(r))
 
 }
 
@@ -20,4 +21,8 @@ function podiumTemplate(winner) {
   podium.querySelector('.podium_name').innerText = winner.name
   podium.querySelector('.podium_avatar').setAttribute('src', winner.avatar) 
   podium.querySelector('.podium_avatar').setAttribute('onerror', "this.onerror=null;this.src='./assets/images/no-image.svg'")
+}
+
+function rankingTemplate(winner) {
+
 }
