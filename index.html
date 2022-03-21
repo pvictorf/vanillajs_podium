@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Podium -->
+      <div id="podium-template" class="podium-list">
+
+        <div class="podium" data-postion="5">
+          <div class="podium_user">
+              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/men/26.jpg"/>
+              <p class="podium_name">Pedro Yung Silva</p>
+          </div>
+          <div class="bar" style="height: 20%;"></div>
+        </div>
+
+        <div class="podium" data-postion="3">
+          <div class="podium_user">
+              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/men/62.jpg"/>
+              <p class="podium_name">Andre Stanley Mattos</p>
+          </div>
+          <div class="bar" style="height: 60%;"></div>
+        </div>
+
+        <div class="podium" data-postion="1">
+          <div class="podium_user">
+              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/women/66.jpg"/>
+              <p class="podium_name">Kaylee Banks</p>
+          </div>
+          <div class="bar" style="height: 100%;"></div>
+        </div>
+
+        <div class="podium" data-postion="2">
+          <div class="podium_user">
+              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/men/21.jpg"/>
+              <p class="podium_name">Arnaldo Cunha Santos Matheus Ferreira</p>
+          </div>
+          <div class="bar" style="height: 80%;"></div>
+        </div>
+
+        <div class="podium" data-postion="4">
+          <div class="podium_user">
+              <img class="podium_avatar avatar" src="https://randomuser.me/api/portraits/women/64.jpg"/>
+              <p class="podium_name">Cristine Santos Almeida</p>
+          </div>
+          <div class="bar" style="height: 80%;"></div>
+        </div>
+      </div>
+      <!-- /Podium -->
+
+      <!-- Ranking -->
+      <div id="ranking-template" class="ranking">
+        <p class="ranking-position"></p>
+        <img class="ranking-avatar avatar"/>
+        <p class="ranking-name" ></p>
+      </div>
+       <!-- /Ranking -->
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

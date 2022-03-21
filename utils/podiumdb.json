@@ -1,0 +1,52 @@
+[
+  { 
+    "id": 1,
+    "name": "Kaylee Banks",
+    "position": 1,
+    "points": 23213,
+    "avatar": "https://randomuser.me/api/portraits/women/66.jpg"  
+  },
+
+  { 
+    "id": 2,
+    "name": "Mark Perez",
+    "position": 2,
+    "points": 2333,
+    "avatar": "https://randomuser.me/api/portraits/men/62.jpg"  
+  },
+  { 
+    "id": 3,
+    "name": "Andre Stanley",
+    "position": 3,
+    "points": 2333,
+    "avatar": "https://randomuser.me/api/portraits/men/26.jpg"  
+  },
+  { 
+    "id": 3,
+    "name": "Pedro Silva",
+    "position": 3,
+    "points": 2333,
+    "avatar": "https://randomuser.me/api/portraits/men/21.jpg"  
+  },
+  { 
+    "id": 4,
+    "name": "Cherly Yild",
+    "position": 4,
+    "points": 2333,
+    "avatar": "https://randomuser.me/api/portraits/women/64.jpg"  
+  },
+  { 
+    "id": 5,
+    "name": "Marcus Sanders",
+    "position": 5,
+    "points": 2333,
+    "avatar": "https://randomuser.me/api/portraits/men/3.jpg"  
+  },
+  { 
+    "id": 5,
+    "name": "Francis Stanley",
+    "position": 5,
+    "points": 2333,
+    "avatar": "https://randomuser.me/api/portraits/men/68.jpg"  
+  }
+]

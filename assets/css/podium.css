@@ -1,0 +1,52 @@
+/* [TODO] Utilizar o order FlexBox - https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items*/
+
+/* Podium */
+.podium-list {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  border: 1px solid #ccc;
+  min-height: 20rem;
+}
+
+.podium {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 5rem;
+  height: 20rem;
+}
+
+.podium .bar {
+  background-color: aquamarine;
+}
+
+.podium_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.podium_user .podium_avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.podium_user .podium_name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 120px;
+  margin: 0.5rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Ranking */
+.ranking_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
