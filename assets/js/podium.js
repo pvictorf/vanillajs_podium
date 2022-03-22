@@ -3,14 +3,14 @@ const $$ = (el) => document.querySelector(el)
 export async function fetchPodium() {
   const res = await fetch(`http://localhost:3000/utils/podiumdb.json`)
   const json = await res.json()
-
   return json;
 }
 
 
 export function draw(json) {
+  // Ordenando o JSON por 'position'
   const data = json.sort((a, b) => a.position - b.position)
-  
+
   const podiumRender = $$('#podium-render')
   const rankingRender = $$('#ranking-render')
 
@@ -44,9 +44,9 @@ function podiumTemplate(podium) {
   const barSize = {
     1: 100,
     2: 60,
-    3: 50,
+    3: 40,
     4: 30,
-    5: 20,
+    5: 15,
   };
 
   return `
@@ -56,7 +56,7 @@ function podiumTemplate(podium) {
           <p class="podium_name">${podium.name}</p>
       </div>
       <div class="bar" style="height: ${barSize[podium.position]}%"></div>
-      <small class="podium_position">${podium.position}</small>
+      <small class="podium_position">${podium.position}°</small>
   </div>`;
 }
 

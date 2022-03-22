@@ -1,12 +1,19 @@
+body, html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* Podium */
+.raking-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .podium-list {
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
   border-bottom: 1px solid #ddd;
   min-height: 20rem;
-  margin: 0 auto;
-  max-width: 900px;
 }
 
 .podium {
@@ -28,6 +35,7 @@
 }
 
 .podium .bar {
+  z-index: 0;
   background-color: rgb(129, 127, 255);
 }
 
@@ -50,7 +58,6 @@
   overflow: hidden;
   max-width: 150px;
   margin: 0.2rem 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 700px) {
@@ -66,19 +73,30 @@
   .podium_user .podium_name {
     font-size: 0.9rem;
     max-width: 77px;
+    z-index: 2;
+  }
+
+  .podium_position {
+    font-size: 1.2rem;
   }
 }
 
 
 /* Ranking */
+.raking-container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 .ranking-list {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  grid-gap: 1.1rem;
-  margin: 0 auto;
-  max-width: 900px;
   margin-top: 1rem;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid #eee;
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 .ranking {
@@ -87,10 +105,12 @@
   grid-template-columns: auto auto 1fr;
   grid-gap: 1rem;
   align-items: center;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 2px 2px 2px 4px #eee;
+  padding: 0.4rem;
+  border-bottom: 1px solid #eee;
 }
+
+.ranking:nth-child(even) { background:  #fff; }
+.ranking:nth-child(odd) { background: #ececfa; } 
 
 .ranking .ranking_avatar {
   width: 40px;
