@@ -1,13 +1,5 @@
 [
   { 
-    "id": 1,
-    "name": "Kaylee Banks",
-    "position": 1,
-    "points": 85033,
-    "avatar": "https://randomuser.me/api/portraits/women/66.jpg"  
-  },
-
-  { 
     "id": 2,
     "name": "Mark Perez",
     "position": 2,
@@ -22,11 +14,11 @@
     "avatar": "https://randomuser.me/api/portraits/men/26.jpg"  
   },
   { 
-    "id": 4,
-    "name": "Pedro Silva",
-    "position": 4,
-    "points": 1898,
-    "avatar": "https://randomuser.me/api/portraits/men/21.jpg"  
+    "id": 1,
+    "name": "Kaylee Banks",
+    "position": 1,
+    "points": 85033,
+    "avatar": "https://randomuser.me/api/portraits/women/66.jpg"  
   },
   { 
     "id": 5,
@@ -48,5 +40,12 @@
     "position": 7,
     "points": 744,
     "avatar": "https://randomuser.me/api/portraits/men/68.jpg"  
+  },
+  { 
+    "id": 4,
+    "name": "Pedro Silva",
+    "position": 4,
+    "points": 1898,
+    "avatar": "https://randomuser.me/api/portraits/men/21.jpg"  
   }
 ]
