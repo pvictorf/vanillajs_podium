@@ -1,13 +1,17 @@
+// Main
 const $$ = (el) => document.querySelector(el)
 
-export async function fetchPodium() {
-  const res = await fetch(`http://192.168.0.179:3000/utils/podiumdb.json`)
-  const json = await res.json()
-  return json;
-}
+window.onload = function() {
+  async function loadPodium() {
+    const res  = await fetch(`../../database/podiumdb.json`)
+    const json = await res.json();
+    draw(json);
+  }
+  loadPodium();
+} 
 
 
-export function draw(json) {
+function draw(json) {
   // Ordenando o JSON por 'position'
   const data = json.sort((a, b) => a.position - b.position)
 
@@ -29,16 +33,6 @@ function orderPodium(podium) {
   })
   return order;
 }
-
-function suffixNth(d) {
-  if (d > 3 && d < 21) return 'th';
-  switch (d % 10) {
-      case 1:  return "st";
-      case 2:  return "nd";
-      case 3:  return "rd";
-      default: return "th";
-  }
-};
 
 function podiumTemplate(podium) {
   const barSize = {
